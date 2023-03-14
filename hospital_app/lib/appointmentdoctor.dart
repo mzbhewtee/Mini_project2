@@ -88,8 +88,16 @@ class MyAppointments extends StatefulWidget {
 }
 
 class _MyAppointmentsState extends State<MyAppointments> {
-  final List<String> Name = [    'Beauty Ikudehinbu',    'Hilary Clinton',    'Opeyemi Olorunfemi'  ];
-  final List<String> Info = [    'General Checkup',    'General Checkup',    'General Checkup'  ];
+  final List<String> Name = [
+    'Beauty Ikudehinbu',
+    'Hilary Clinton',
+    'Opeyemi Olorunfemi'
+  ];
+  final List<String> Info = [
+    'General Checkup',
+    'General Checkup',
+    'General Checkup'
+  ];
 
   void handleCancel(int index) {
     setState(() {
@@ -121,50 +129,50 @@ class _MyAppointmentsState extends State<MyAppointments> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 30.0, left: 8, right: 8),
-    child : Column(
-      children: List.generate(
-        Name.length,
-        (index) => Padding(
+      child: Column(
+        children: List.generate(
+          Name.length,
+          (index) => Padding(
             padding: const EdgeInsets.only(bottom: 8.0),
-        child: Card(
-          color: Color.fromARGB(68, 139, 127, 199),
-          child: ListTile(
-            title: Text(
-              Name[index],
-              style: TextStyle(
-                color: Color.fromRGBO(14, 2, 85, 1),
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            subtitle: Text(
-              Info[index],
-              style: TextStyle(
-                color: Color.fromRGBO(14, 2, 85, 1),
-                fontWeight: FontWeight.w300,
-              ),
-            ),
-            trailing: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                IconButton(
-                  icon: Icon(Icons.check, color: Colors.green),
-                  onPressed: () {
-                    handleCheck();
-                  },
+            child: Card(
+              color: Color.fromARGB(68, 139, 127, 199),
+              child: ListTile(
+                title: Text(
+                  Name[index],
+                  style: TextStyle(
+                    color: Color.fromRGBO(14, 2, 85, 1),
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-                IconButton(
-                  icon: Icon(Icons.cancel, color: Colors.red),
-                  onPressed: () {
-                    handleCancel(index);
-                  },
+                subtitle: Text(
+                  Info[index],
+                  style: TextStyle(
+                    color: Color.fromRGBO(14, 2, 85, 1),
+                    fontWeight: FontWeight.w300,
+                  ),
                 ),
-              ],
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    IconButton(
+                      icon: Icon(Icons.check, color: Colors.green),
+                      onPressed: () {
+                        handleCheck();
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.cancel, color: Colors.red),
+                      onPressed: () {
+                        handleCancel(index);
+                      },
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
         ),
-        ),
       ),
-    ),
     );
   }
 }
