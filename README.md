@@ -3,7 +3,7 @@
 
 ## Resources Used for Assignment
 
-This is a list of resources that I used to complete the assignment:
+This is a list of resources that we used to complete the assignment:
 
 - [Flutter Official Documentation](https://flutter.dev/docs) - Flutter is an open-source framework for developing high-performance, high-fidelity mobile apps for iOS, Android, and the web. We used the official documentation extensively to learn about Flutter widgets and how to implement various features such as animations, navigation, and Firebase authentication.
 
