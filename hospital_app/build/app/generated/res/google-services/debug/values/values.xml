@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">514324471778-7tj8vgatlpfaemtpvlla6avaqsngf8lh.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">514324471778</string>
+    <string name="google_api_key" translatable="false">AIzaSyDQBB4R3nSXbYpnUaxz7wuBh19wy01fjMc</string>
+    <string name="google_app_id" translatable="false">1:514324471778:android:bbacc838ff646da498a3bb</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDQBB4R3nSXbYpnUaxz7wuBh19wy01fjMc</string>
+    <string name="google_storage_bucket" translatable="false">hospital-rolebased.appspot.com</string>
+    <string name="project_id" translatable="false">hospital-rolebased</string>
+</resources>
